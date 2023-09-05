@@ -1,2 +1,2 @@
 # CPPT_Yarema_MV_KI-306_2
-Лабораторні роботи з предмету "Кросплатформенні засоби програмування"
+Laboratory work on the subject "Cross-platform programming tools"
