@@ -79,7 +79,7 @@ public class Lab2YaremaKI306 {
         }
     }
 
-    private static void saveJuggedArrToFile(char[][] juggedArr) {
+    public static void saveJuggedArrToFile(char[][] juggedArr) {
         try {
             PrintWriter writer = new PrintWriter("MyFile.txt");
 
