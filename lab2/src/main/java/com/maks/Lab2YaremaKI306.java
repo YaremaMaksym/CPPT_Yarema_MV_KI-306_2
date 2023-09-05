@@ -5,7 +5,24 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Lab2YaremaKI306 {
+/**
+ * Class Lab2YaremaKI306 implements laboratory work №2
+ *
+ * @author Yarema Maksym
+ * @version 1.0
+ * @since version 1.0
+ *
+ */
+
+public class Lab2YaremaKI306
+{
+    /**
+     * The static main method is the entry point to the program. It calls other methods to perform
+     *    matrix generation, display, and file saving.
+     *
+     * @param args The command-line arguments passed to the program.
+     *
+     */
     public static void main(String[] args){
 
         int size = inputSize();
@@ -17,6 +34,12 @@ public class Lab2YaremaKI306 {
 
     }
 
+    /**
+     * Reads and validates the size of the square matrix from the user.
+     *    It handles input exceptions and keeps prompting until a valid size is provided.
+     *
+     * @return int size of matrix
+     */
     public static int inputSize(){
         Scanner scanner = new Scanner(System.in);
         int size;
@@ -35,6 +58,12 @@ public class Lab2YaremaKI306 {
         return size;
     }
 
+    /**
+     * Reads and validates the character to fill the matrix from the user.
+     *     It handles input exceptions and keeps prompting until a valid character is provided.
+     *
+     * @return The character symbol provided by the user.
+     */
     public static char inputFiller(){
         Scanner scanner = new Scanner(System.in);
         char symbol;
@@ -58,6 +87,14 @@ public class Lab2YaremaKI306 {
         return symbol;
     }
 
+    /**
+     * Generates a jagged square matrix
+     *    of the specified size and fills it with the provided character.
+     *
+     * @param size    The size of the square matrix to be generated.
+     * @param symbol  The character to fill the matrix with.
+     * @return        The generated jagged square matrix as a 2D character array.
+     */
     public static char[][] generateJaggedArr(int size, char symbol){
         char[][] juggedArr = new char[size][size];
 
@@ -70,6 +107,12 @@ public class Lab2YaremaKI306 {
         return juggedArr;
     }
 
+    /**
+     * Displays the generated jagged square matrix
+     *    in the console.
+     *
+     * @param juggedArr  The jagged square matrix to be displayed.
+     */
     public static void showJuggedArr(char[][] juggedArr) {
         for (char[] charArr : juggedArr) {
             for (char ch : charArr) {
@@ -79,6 +122,12 @@ public class Lab2YaremaKI306 {
         }
     }
 
+    /**
+     * Saves the generated jagged square matrix
+     *    to a text file named "lab2/MyFile.txt".
+     *
+     * @param juggedArr  The jagged square matrix to be saved to the txt file.
+     */
     public static void saveJuggedArrToFile(char[][] juggedArr) {
         try {
             PrintWriter writer = new PrintWriter("lab2/MyFile.txt");
