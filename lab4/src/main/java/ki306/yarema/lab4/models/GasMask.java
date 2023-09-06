@@ -4,13 +4,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 /**
- * Class Lab2YaremaKI306 implements laboratory work №3
- * A class representing a gas mask and allowing various operations with it.
+ * Class Lab2YaremaKI306 implements laboratory work №4
+ * An abstract class representing a gas mask and allowing various operations with it.
  * The gas mask has a type, a filter, a state (on or off), a usage count,
  * a sealing state, and a cleanliness state.
  *
  * @author Yarema Maksym
- * @version 1.0
+ * @version 1.2
  * @since version 1.0
  *
  */
