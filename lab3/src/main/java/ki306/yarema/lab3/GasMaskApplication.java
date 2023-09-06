@@ -5,7 +5,18 @@ import ki306.yarema.lab3.models.GasMask;
 
 import java.io.IOException;
 
-public class Main {
+/**
+ * Gas Mask Application class implements main method for GasMask
+ class possibilities demonstration
+ *
+ * @author Yarema Maksym
+ * @version 1.0
+ * @since version 1.0
+ */
+public class GasMaskApplication {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         GasMask gasMask = new GasMask();
 
