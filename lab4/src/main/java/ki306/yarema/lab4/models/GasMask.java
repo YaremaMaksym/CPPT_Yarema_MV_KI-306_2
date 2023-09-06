@@ -158,6 +158,9 @@ public abstract class GasMask {
         log(status);
     }
 
+    /**
+     * Return type of gas mask.
+     */
     public String getType() {
         return type;
     }
