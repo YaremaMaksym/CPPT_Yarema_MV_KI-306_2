@@ -35,7 +35,7 @@ public class GasMask {
         usageCount = 0;
         isSealed = false;
         isClean = true;
-        logFileName = "GasMaskLog.txt";
+        logFileName = "lab3/GasMaskLog.txt";
 
         try {
             logFileWriter = new FileWriter(new File(logFileName));
@@ -56,7 +56,7 @@ public class GasMask {
         usageCount = 0;
         isSealed = false;
         isClean = true;
-        logFileName = "GasMaskLog.txt";
+        logFileName = "lab3/GasMaskLog.txt";
 
         try {
             logFileWriter = new FileWriter(new File(logFileName));

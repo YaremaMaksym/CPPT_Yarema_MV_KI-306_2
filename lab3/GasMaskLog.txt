@@ -1,0 +1,25 @@
+Gas Mask Status:
+Type: EN14387
+Filter Type: A2B2E2K2
+Is Night Vision On: false
+Usage Count: 0
+Is Sealed: false
+Is Clean: true
+
+Gas mask is not sealed properly or the filter is not effective.
+Gas mask is not sealed properly or the filter is not effective.
+Gas mask is sealed.
+Breathed safely using the gas mask.
+Night vision mode is turned on.
+Breathed safely using the gas mask.
+Filter replaced with a new one.
+Gas Mask Status:
+Type: EN14387
+Filter Type: A1B1E1K1
+Is Night Vision On: true
+Usage Count: 2
+Is Sealed: true
+Is Clean: true
+
+Filter replaced with a new one.
+Gas mask is cleaned and the filter is replaced.
