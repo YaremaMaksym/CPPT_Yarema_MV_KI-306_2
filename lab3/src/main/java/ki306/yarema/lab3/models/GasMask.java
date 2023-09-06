@@ -7,7 +7,7 @@ import java.io.IOException;
 public class GasMask {
     private final String type;
     private Filter filter;
-    private boolean isOn;
+    private boolean isNightVisionOn;
     private int usageCount;
     private boolean isSealed;
     private boolean isClean;
@@ -17,7 +17,7 @@ public class GasMask {
     public GasMask() {
         type = "EN14387";
         filter = new Filter("A2B2E2K2");
-        isOn = false;
+        isNightVisionOn = false;
         usageCount = 0;
         isSealed = false;
         isClean = true;
@@ -30,10 +30,15 @@ public class GasMask {
         }
     }
 
+    /**
+     * Constructor for creating a gas mask with specified parameters.
+     * @param maskType The type of the gas mask.
+     * @param filterType The type of the filter.
+     */
     public GasMask(String maskType, String filterType) {
         type = maskType;
         filter = new Filter(filterType);
-        isOn = false;
+        isNightVisionOn = false;
         usageCount = 0;
         isSealed = false;
         isClean = true;
@@ -46,14 +51,14 @@ public class GasMask {
         }
     }
 
-    public void turnOn() {
-        isOn = true;
-        log("Gas mask is turned on.");
+    public void turnNightVisionOn() {
+        isNightVisionOn = true;
+        log("Night vision mode is turned on.");
     }
 
-    public void turnOff() {
-        isOn = false;
-        log("Gas mask is turned off.");
+    public void turnNightVisionOff() {
+        isNightVisionOn = false;
+        log("Night vision mode is turned off.");
     }
 
     public void replaceFilter(Filter newFilter) {
@@ -62,7 +67,7 @@ public class GasMask {
     }
 
     public void breathe() {
-        if (isOn && isSealed && filter.isEffective()) {
+        if (isSealed && filter.isEffective()) {
             incrementUsage();
             log("Breathed safely using the gas mask.");
         } else {
@@ -101,7 +106,7 @@ public class GasMask {
         String status = "Gas Mask Status:\n";
         status += "Type: " + type + "\n";
         status += "Filter Type: " + filter.getType() + "\n";
-        status += "Is On: " + isOn + "\n";
+        status += "Is Night Vision On: " + isNightVisionOn + "\n";
         status += "Usage Count: " + usageCount + "\n";
         status += "Is Sealed: " + isSealed + "\n";
         status += "Is Clean: " + isClean + "\n";
