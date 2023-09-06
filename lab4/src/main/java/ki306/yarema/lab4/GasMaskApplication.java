@@ -6,7 +6,7 @@ import ki306.yarema.lab4.models.ComanderGasMask;
 import java.io.IOException;
 
 /**
- * Gas Mask Application class implements main method for GasMask
+ * Gas Mask Application class implements main method for CommanderGasMask
  class possibilities demonstration
  *
  * @author Yarema Maksym
