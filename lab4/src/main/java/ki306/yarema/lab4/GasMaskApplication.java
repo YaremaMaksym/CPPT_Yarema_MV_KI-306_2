@@ -1,7 +1,7 @@
 package ki306.yarema.lab4;
 
-import ki306.yarema.lab3.models.Filter;
-import ki306.yarema.lab3.models.GasMask;
+import ki306.yarema.lab4.models.Filter;
+import ki306.yarema.lab4.models.ComanderGasMask;
 
 import java.io.IOException;
 
@@ -18,29 +18,31 @@ public class GasMaskApplication {
      * @param args
      */
     public static void main(String[] args) {
-        GasMask gasMask = new GasMask();
+        ComanderGasMask comanderGasMask = new ComanderGasMask();
 
-        gasMask.checkStatus();
+        comanderGasMask.checkStatus();
 
-        gasMask.breathe();
-        gasMask.breathe();
+        comanderGasMask.breathe();
+        comanderGasMask.breathe();
 
-        gasMask.sealMask();
+        comanderGasMask.sealMask();
 
-        gasMask.breathe();
+        comanderGasMask.breathe();
 
-        gasMask.turnNightVisionOn();
+        comanderGasMask.turnNightVisionOn();
 
-        gasMask.breathe();
+        comanderGasMask.breathe();
 
-        gasMask.replaceFilter(new Filter("A1B1E1K1"));
+        comanderGasMask.replaceFilter(new Filter("A1B1E1K1"));
 
-        gasMask.checkStatus();
+        comanderGasMask.checkStatus();
 
-        gasMask.cleanAndReplaceFilter();
+        comanderGasMask.sendSosSignal();
+
+        comanderGasMask.cleanAndReplaceFilter();
 
         try {
-            gasMask.dispose();
+            comanderGasMask.dispose();
         } catch (IOException e) {
             e.printStackTrace();
         }
