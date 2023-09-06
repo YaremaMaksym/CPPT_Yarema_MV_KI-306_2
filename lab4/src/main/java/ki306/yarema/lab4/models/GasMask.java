@@ -129,7 +129,7 @@ public abstract class GasMask {
     /**
      * Increment the usage count of the gas mask.
      */
-    public void incrementUsage() {
+    private void incrementUsage() {
         usageCount++;
     }
 
