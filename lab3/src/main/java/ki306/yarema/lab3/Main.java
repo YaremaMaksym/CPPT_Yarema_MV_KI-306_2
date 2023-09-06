@@ -7,28 +7,29 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        GasMask gasMask1 = new GasMask();
+        GasMask gasMask = new GasMask();
 
-        gasMask1.turnOn();
+        gasMask.checkStatus();
 
-        gasMask1.checkStatus();
+        gasMask.breathe();
+        gasMask.breathe();
 
-        gasMask1.breathe();
-        gasMask1.breathe();
+        gasMask.sealMask();
 
-        gasMask1.sealMask();
+        gasMask.breathe();
 
-        gasMask1.breathe();
-        gasMask1.breathe();
+        gasMask.turnNightVisionOn();
 
-        gasMask1.replaceFilter(new Filter("A1B1E1K1"));
+        gasMask.breathe();
 
-        gasMask1.checkStatus();
+        gasMask.replaceFilter(new Filter("A1B1E1K1"));
 
-        gasMask1.cleanAndReplaceFilter();
+        gasMask.checkStatus();
+
+        gasMask.cleanAndReplaceFilter();
 
         try {
-            gasMask1.dispose();
+            gasMask.dispose();
         } catch (IOException e) {
             e.printStackTrace();
         }
