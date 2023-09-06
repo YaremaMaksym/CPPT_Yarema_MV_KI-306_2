@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ki306.yarema.lab4"},{"l":"ki306.yarema.lab4.models"}];updateSearchResults();
