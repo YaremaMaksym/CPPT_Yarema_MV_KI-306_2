@@ -5,7 +5,16 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+/**
+ * Class EquationsApp Implements driver for Equations class
+ * @author Yarema Maksym
+ * @version 1.0
+ */
 public class EquationsApp {
+    /**
+     * Method driver
+     * @param args
+     */
     public static void main(String[] args) {
         try {
             System.out.print("Enter file name: ");

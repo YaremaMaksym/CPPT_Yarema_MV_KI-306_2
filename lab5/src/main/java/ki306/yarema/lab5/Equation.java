@@ -1,6 +1,16 @@
 package ki306.yarema.lab5;
 
+/**
+ * Class Equation implements method for y=sin(x)/(x+tg(x)) expression
+ * calculation
+ * @author Yarema Maksym
+ * @version 1.0
+ */
 public class Equation {
+    /**
+     * Method calculates the y=sin(x)/(x+tg(x)) expression
+     * @param x Angle in degrees
+     */
     public double calculate(int x) throws CalcException {
         double y, rad;
         rad = x * Math.PI / 180.0;
