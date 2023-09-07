@@ -26,9 +26,9 @@ public class EquationsApp {
             System.out.println("Result is " + result);
 
             fileUtils.writeResTxt("lab6/textRes.txt", result);
-            fileUtils.writeResBin("lab6/BinRes.bin", result);
+            fileUtils.writeResBin("lab6/binRes.bin", result);
 
-            fileResult = fileUtils.readResBin("lab6/BinRes.bin");
+            fileResult = fileUtils.readResBin("lab6/binRes.bin");
             System.out.println("Result from binary file is: " + fileResult);
 
             fileResult = fileUtils.readResTxt("lab6/textRes.txt");
