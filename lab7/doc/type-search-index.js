@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ki306.yarema.lab7","l":"BedsideTable"},{"p":"ki306.yarema.lab7","l":"Book"},{"p":"ki306.yarema.lab7","l":"Flashlight"},{"p":"ki306.yarema.lab7","l":"Item"},{"p":"ki306.yarema.lab7","l":"Main"}];updateSearchResults();
