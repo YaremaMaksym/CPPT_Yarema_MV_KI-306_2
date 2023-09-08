@@ -24,7 +24,7 @@ public class BedsideTable <T extends Item> {
         if (!array.isEmpty()){
             T max = array.get(0);
             for (int i = 1; i <array.size(); i++) {
-                if (array.get(i).getWeight() > max.getWeight()){
+                if (array.get(i).compareTo(max) > 0){
                     max = array.get(i);
                 }
             }
