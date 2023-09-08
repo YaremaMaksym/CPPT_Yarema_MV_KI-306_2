@@ -6,7 +6,7 @@ public class Main {
         bsTable.putItem(new Book("Atomic Habits", 1.852));
         bsTable.putItem(new Flashlight("Mobile flashlight" , 0.13));
         bsTable.putItem(new Book("The Catcher in the Rye" , 1.243));
-        bsTable.putItem(new Flashlight("Endless light" , 0.726));
+        bsTable.putItem(new Flashlight("Endless light +Ultra" , 1.726));
 
         Item item = bsTable.getItem(2);
         item.print();

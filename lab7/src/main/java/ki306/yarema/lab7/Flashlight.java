@@ -9,9 +9,9 @@ public class Flashlight implements Item{
         this.weight = weight;
     }
 
-    public int compareTo(Flashlight flashlight) {
+    public int compareTo(Item item) {
         Double w = weight;
-        return w.compareTo(flashlight.getWeight());
+        return w.compareTo(item.getWeight());
     }
 
     @Override
