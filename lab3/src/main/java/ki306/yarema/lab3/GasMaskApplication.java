@@ -1,8 +1,5 @@
 package ki306.yarema.lab3;
 
-import ki306.yarema.lab3.models.Filter;
-import ki306.yarema.lab3.models.GasMask;
-
 import java.io.IOException;
 
 /**

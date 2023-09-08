@@ -1,4 +1,4 @@
-package ki306.yarema.lab3.models;
+package ki306.yarema.lab3;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package ki306.yarema.lab3.models;
+package ki306.yarema.lab3;
 
 /**
  * A class representing a filter used in a gas mask and allowing various operations with it.
